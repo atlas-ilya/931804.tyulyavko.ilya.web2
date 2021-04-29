@@ -40,7 +40,7 @@ namespace lab1
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Calc}/{action=Index}/{id?}");
+                    pattern: "{controller=Quiz}/{action=Index}/{id?}");
             });
         }
     }

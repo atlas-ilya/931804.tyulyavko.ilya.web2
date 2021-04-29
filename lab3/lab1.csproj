@@ -12,12 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Calc\index.cshtml" />
-    <None Include="Views\Calc\ManualParsingInSeparateActions.cshtml" />
-    <None Include="Views\Calc\ManualParsingInSingleAction.cshtml" />
-    <None Include="Views\Calc\ModelBindingParametrs.cshtml" />
-    <None Include="Views\Calc\ModelBindingSeparateModel.cshtml" />
-    <None Include="Views\Calc\Result.cshtml" />
+    <None Include="Views\Quiz\index.cshtml" />
+    <None Include="Views\Quiz\quiz.cshtml" />
+    <None Include="Views\Quiz\quizResult.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
