@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Text Box";
+    if (ViewBag.TextBox == null)
+    {
+        <form class="row">
+            <div class="col-md-3">
+                <h1>TextBox</h1>
+                <br />
+                <b>Text</b>
+                <div> <input name="TextBox" class="form-control col-md-1" style="display: inline" placeholder="Text" /></div>
+                <br />
+                <div style="margin-top:20px">
+                    <button formmethod="post" formaction="~/Controls/Save_TextBox" class="btn btn-light col-md-3" style="display: inline" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    }
+    else
+    {
+<div>
+    <h2>TextBox</h2>
+    <b style="display: inline">Text</b>
+    <h6>@ViewBag.TextBox</h6>
+</div>
+        
+      
+    }
+}

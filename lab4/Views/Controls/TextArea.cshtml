@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Text Area";
+    if (ViewBag.TextArea == null)
+    {
+        <form class="row">
+            <div class="col-md-3">
+                <h1>Text Area</h1>
+                <br />
+                <h3>Text</h3>
+                <textarea name="TextArea" class="form-control col-md-1" style="display: inline"></textarea>
+                <br />
+                <button formmethod="post" formaction="~/Controls/Save_TextArea" class="btn btn-light col-md-3" style="display: inline;margin-top:20px" type="submit">Submit</button>
+            </div>
+        </form>
+    }
+    else
+    {
+
+<div>
+    <h1>Text Area</h1>
+    <b>Text</b>
+    <h6>@ViewBag.TextArea</h6>
+</div>
+    }
+}

@@ -1,0 +1,25 @@
+﻿@model Lab1.Models.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<h1>Sign Up</h1>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <input type="hidden" asp-for="FirstName" />
+    <input type="hidden" asp-for="LastName" />
+    <input type="hidden" asp-for="Gender" />
+    <input type="hidden" asp-for="Day" />
+    <input type="hidden" asp-for="Month" />
+    <input type="hidden" asp-for="Year" />
+
+    <label><b>Email</b></label><br />
+    <input type="text" name="Email" /><br />
+    <label><b>Password</b></label><br />
+    <input type="text" name="Password" /><br />
+    <label><b>Confirm password</b></label><br />
+    <input type="text" name="confirm" /><br /><br />
+    <input type="checkbox" name="Remember" value="true" /><label> Remember?</label><br /><br />
+    <input class="btn btn-primary col-md-auto" style="display: inline" type="submit" value="Complete sign up" />
+</form>
